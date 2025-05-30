@@ -1,16 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./resume.css";
+import LinkedinSquareIcon from "../assets/linkedin-square-icon.svg";
 
 const CyberpunkResume = () => {
   const [activeSection, setActiveSection] = useState("about");
-  const [scanLinePosition, setScanLinePosition] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setScanLinePosition((prev) => (prev + 1) % 100);
-    }, 50);
-    return () => clearInterval(interval);
-  }, []);
 
   const sections = {
     about: {
@@ -30,7 +23,7 @@ const CyberpunkResume = () => {
             </p>
             <div className="mt-4 p-4 border border-cyber-primary/30 bg-terminal-bg/50">
               <p className="text-sm">
-                Experienced developer specializing in modern web technologies.
+                Experienced software engineer specializing in modern web technologies.
                 Passionate about creating efficient, scalable solutions and
                 staying current with emerging technologies in the software
                 development landscape.
@@ -52,17 +45,17 @@ const CyberpunkResume = () => {
             },
             {
               category: "Backend",
-              skills: ["Node.js", "Python", "APIs", "Databases"],
+              skills: ["Node.js", ".Net", "APIs", "Databases"],
               level: 80,
             },
             {
               category: "Cloud",
-              skills: ["AWS", "S3", "Docker", "CI/CD"],
+              skills: ["AWS", "AZURE", "Docker", "CI/CD"],
               level: 75,
             },
             {
               category: "Tools",
-              skills: ["Git", "VS Code", "Linux", "Agile"],
+              skills: ["Git", "VS Code", "Agile", "WSL"],
               level: 90,
             },
           ].map((skillGroup, index) => (
@@ -102,33 +95,43 @@ const CyberpunkResume = () => {
         <div className="space-y-4">
           {[
             {
-              company: "TechCorp Solutions",
-              role: "Senior Developer",
-              period: "2022 - Present",
+              company: "Slalom Consulting",
+              role: "Senior Software Engineer",
+              period: "2021 - Present",
               achievements: [
-                "Led team of 5 developers",
-                "Reduced load times by 40%",
-                "Implemented CI/CD pipeline",
+                "Developed full-stack applications hosted in Azure using React, and .NET",
+                "Collaborated with clients to revise requirements and ensure project alignment with business goals.",
+                "Developed and implemented microservices in C# to enhance system modularity and improve scalability.",
+                "Implemented CI/CD pipelines",
               ],
             },
             {
-              company: "Digital Innovations Inc",
+              company: "Allied Electronics and Automation",
               role: "Full Stack Developer",
-              period: "2020 - 2022",
+              period: "2017 - 2021",
               achievements: [
-                "Built responsive web applications",
-                "Integrated third-party APIs",
-                "Mentored junior developers",
+                "Worked on enterprise level .Net-based ecommerce applications, emphasizeing performance and user experiences.",
+                "Led creation of Vue.JS based CRM web application, centralizing lead generation for sales staff.",
+                "Implemented DevOps principles and added CI/CD pipelines to increase deployment speed, decreasing the time to deploy.",
               ],
             },
             {
-              company: "StartupXYZ",
-              role: "Frontend Developer",
-              period: "2018 - 2020",
+              company: "Fashion Glass and Mirror",
+              role: "Software Engineer",
+              period: "2016-2017",
               achievements: [
-                "Developed React components",
-                "Optimized for mobile",
-                "Collaborated with design team",
+                "Implemented Inventory Management system to track and audit products and supplies, allowing for 100% accurate inventory audits and reducing time performing audits. Using Xamarin Forms, C# and SQL.",
+                "Gathered business requirements, designing software architecture, implementing solutions and testing.",
+              ],
+            },
+            {
+              company: "Alliant Systems",
+              role: "Full-Stack Developer",
+              period: "2012 - 2016",
+              achievements: [
+                "Key contributor in the development and maintenance of VB.Net-based ERP monolithic application with over 2 millions lines of code and 200 custom implementations.",
+                "Principal developer in Java-based Android App development and maintenance with over 2000 daily users.",
+                "Contributor to the design, development, and maintenance of multiple SQL and SQLLite databases.",
               ],
             },
           ].map((job, index) => (
@@ -164,8 +167,18 @@ const CyberpunkResume = () => {
         <div className="grid-pattern max-w-md">
           <div className="space-y-4">
             {[
-              { label: "EMAIL", value: "mark@example.com", icon: "📧" },
-              { label: "LINKEDIN", value: "/in/markthompson", icon: "🔗" },
+              { label: "EMAIL", value: "mmckinney0711@gmail.com", icon: "📧" },
+              {
+                label: "LINKEDIN",
+                value: "https://www.linkedin.com/in/mark-mckinney-33a374b2/",
+                icon: (
+                  <img
+                    src={LinkedinSquareIcon}
+                    alt="LinkedIn"
+                    className="inline-block w-6 h-6 icon-cyber-primary"
+                  />
+                ),
+              },
               { label: "GITHUB", value: "/markthompson-dev", icon: "⚡" },
               { label: "PORTFOLIO", value: "markthompson.dev", icon: "🌐" },
             ].map((contact, index) => (
