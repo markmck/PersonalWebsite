@@ -14,19 +14,19 @@ const CyberpunkResume = () => {
 
   const sections = {
     about: {
-      title: "PERSONAL_DATA.exe",
+      title: "PERSONAL_DATA",
       content: (
         <div className="grid-pattern">
-          <h2 className="text-2xl font-mono text-cyber-accent mb-4 glitch-text">
-            Mark Thompson
+          <h2 className="text-2xl font-mono text-cyber-accent mb-4t">
+            Mark McKinney
           </h2>
           <div className="text-terminal-text space-y-2">
             <p className="font-mono text-sm">
-              DESIGNATION: Full Stack Developer
+              DESIGNATION: Senior Full Stack Developer
             </p>
             <p className="font-mono text-sm">LOCATION: Irving, Texas</p>
             <p className="font-mono text-sm">
-              CLEARANCE: Available for Remote Work
+              STATUS: Available for new opportunities
             </p>
             <div className="mt-4 p-4 border border-cyber-primary/30 bg-terminal-bg/50">
               <p className="text-sm">
@@ -41,7 +41,7 @@ const CyberpunkResume = () => {
       ),
     },
     skills: {
-      title: "TECH_STACK.dll",
+      title: "TECH_STACK",
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
@@ -97,7 +97,7 @@ const CyberpunkResume = () => {
       ),
     },
     experience: {
-      title: "WORK_HISTORY.log",
+      title: "WORK_HISTORY",
       content: (
         <div className="space-y-4">
           {[
@@ -159,7 +159,7 @@ const CyberpunkResume = () => {
       ),
     },
     contact: {
-      title: "CONTACT_PROTOCOL.ini",
+      title: "CONTACT_PROTOCOL",
       content: (
         <div className="grid-pattern max-w-md">
           <div className="space-y-4">
@@ -207,11 +207,21 @@ const CyberpunkResume = () => {
       {/* Header */}
       <header className="relative z-20 p-6 border-b border-terminal-border">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-3xl font-mono text-cyber-accent mb-2 glitch-text">
+          <h1
+            className="text-3xl font-mono text-cyber-accent mb-2 glitch"
+            data-text="SYSTEM_RESUME_v2.1.0"
+          >
             SYSTEM_RESUME_v2.1.0
           </h1>
-          <p className="text-terminal-muted font-mono text-sm">
+          <p className="text-terminal-dim font-mono text-sm flex items-center">
             {">"} Initializing personal data interface...
+            <span
+              className="ml-1 inline-block w-2.5 h-4 bg-cyber-dark opacity-50"
+              style={{
+                animation: "terminal-blink 1s infinite",
+                marginBottom: "2px",
+              }}
+            ></span>
           </p>
         </div>
       </header>
@@ -226,7 +236,7 @@ const CyberpunkResume = () => {
                 onClick={() => setActiveSection(section)}
                 className={`px-4 py-2 font-mono text-sm border transition-all duration-300 ${
                   activeSection === section
-                    ? "bg-cyber-secondary/20 border-cyber-primary text-cyber-accent glow-red"
+                    ? "bg-cyber-secondary/20 border-cyber-primary text-cyber-accent glow-cyber-glow"
                     : "border-terminal-border text-terminal-muted hover:border-cyber-primary/60 hover:text-cyber-light"
                 }`}
               >

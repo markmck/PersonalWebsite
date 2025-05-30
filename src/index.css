@@ -6,12 +6,14 @@
   --color-cyber-accent: #f87171;
   --color-cyber-light: #fca5a5;
   --color-cyber-dark: #991b1b;
+  --color-cyber-glow: rgba(239, 68, 68, 0.5);
   --color-terminal-bg: #000000;
   --color-terminal-panel: #0a0a0a;
   --color-terminal-surface: #1a1a1a;
   --color-terminal-text: #d1d5db;
   --color-terminal-muted: #9ca3af;
   --color-terminal-dim: #6b7280;
+  --color-terminal-border: rgba(239, 68, 68, 0.3)
 }
 
 :root {
