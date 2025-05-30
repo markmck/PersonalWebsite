@@ -204,12 +204,6 @@ const CyberpunkResume = () => {
         ></div>
       </div>
 
-      {/* Scan line effect */}
-      <div
-        className="fixed w-full h-0.5 bg-gradient-to-r from-transparent via-cyber-primary to-transparent opacity-30 z-10"
-        style={{ top: `${scanLinePosition}%`, transition: "none" }}
-      ></div>
-
       {/* Header */}
       <header className="relative z-20 p-6 border-b border-terminal-border">
         <div className="max-w-6xl mx-auto">
