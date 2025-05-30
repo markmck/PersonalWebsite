@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import CyberpunkResume from './App.jsx'
+import CyberpunkResume from './resume/resume.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
