@@ -20,5 +20,6 @@ jobs:
         run: |
           aws s3 sync . s3://markamckinney.com --delete --exclude ".git/*" --exclude ".github/*"
           aws s3 cp . s3://markamckinney.com --recursive --exclude "*" --include "*.js" --content-type "application/javascript"
+          aws s3 cp . s3://markamckinney.com --recursive --exclude "*" --include "*.jsx" --content-type "application/javascript"
           aws s3 cp . s3://markamckinney.com --recursive --exclude "*" --include "*.css" --content-type "text/css"
           aws s3 cp . s3://markamckinney.com --recursive --exclude "*" --include "*.html" --content-type "text/html"
