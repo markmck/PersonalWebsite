@@ -6,5 +6,5 @@ import CyberpunkResume from './resume/resume.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <CyberpunkResume />
-  </StrictMode>,
+  </StrictMode>
 )
