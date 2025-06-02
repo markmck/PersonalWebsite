@@ -30,7 +30,7 @@ const CyberpunkResume = () => {
   };
 
   return (
-    <div className="min-h-screen bg-terminal-bg text-white relative overflow-hidden">
+    <div className="min-h-screen min-w-screen bg-terminal-bg text-white relative overflow-hidden">
       {/* Animated background grid */}
       <div className="fixed inset-0 opacity-10">
         <div
