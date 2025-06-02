@@ -9,6 +9,18 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build React app
+        run: npm run build
+
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
@@ -16,10 +28,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
 
-      - name: Deploy to S3 with correct MIME types
+      - name: Deploy built files to S3
         run: |
-          aws s3 sync . s3://markamckinney.com --delete --exclude ".git/*" --exclude ".github/*"
-          aws s3 cp . s3://markamckinney.com --recursive --exclude "*" --include "*.js" --content-type "application/javascript"
-          aws s3 cp . s3://markamckinney.com --recursive --exclude "*" --include "*.jsx" --content-type "application/javascript"
-          aws s3 cp . s3://markamckinney.com --recursive --exclude "*" --include "*.css" --content-type "text/css"
-          aws s3 cp . s3://markamckinney.com --recursive --exclude "*" --include "*.html" --content-type "text/html"
+          aws s3 sync dist/ s3://markamckinney.com --delete
