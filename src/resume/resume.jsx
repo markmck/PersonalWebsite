@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./resume.css";
 import Button from "../components/button/button.jsx";
-import AboutSection from "../components/sections/AboutSection.jsx";
+import AboutSection from "../components/sections/aboutSection.jsx";
 import SkillsSection from "../components/sections/skillsSections.jsx";
 import ExperienceSection from "../components/sections/experienceSection.jsx";
 import ContactSection from "../components/sections/contactSection.jsx";
