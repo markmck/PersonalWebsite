@@ -14,17 +14,19 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   type = "button",
 }) => (
-  <button
+<button
     type={type}
     onClick={onClick}
     className={`cybr-btn header-font ${isActive ? "cybr-btn--active" : ""}`}
-  >
-    {label.toUpperCase()}
-    <span aria-hidden>_</span>
-    <span aria-hidden className="cybr-btn__glitch">
-      {label.toUpperCase()}_
+>
+    <span className="cybr-btn__label">
+        {label.toUpperCase()}
+        <span aria-hidden>_</span>
+        <span aria-hidden className="cybr-btn__glitch">
+            {label.toUpperCase()}_
+        </span>
     </span>
-  </button>
+</button>
 );
 
 export default Button;
