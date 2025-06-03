@@ -47,10 +47,10 @@ const CyberpunkResume = () => {
       <header className="relative z-20 p-6 border-b border-terminal-border">
         <div className="max-w-6xl mx-auto">
           <h1
-            className="text-3xl font-mono text-cyber-accent mb-2 glitch"
-            data-text="SYSTEM_RESUME_v2.1.0"
+            className="text-3xl header-font text-cyber-accent mb-2 glitch"
+            data-text="SYSTEM_RESUME"
           >
-            SYSTEM_RESUME_v2.1.0
+            SYSTEM_RESUME
           </h1>
           <p className="text-terminal-dim font-mono text-sm flex items-center">
             {">"} Initializing personal data interface...

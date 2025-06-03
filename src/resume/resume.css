@@ -3,6 +3,13 @@
   position: relative;
 }
 
+.header-font {
+  font-family: 'FutureFont', 'font-mono';
+  font-weight: 700;
+  color: rgba(239, 68, 68, 0.9);
+
+}
+
 .panel-border::before {
   content: "";
   position: absolute;

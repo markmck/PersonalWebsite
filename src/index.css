@@ -16,6 +16,15 @@
   --color-terminal-border: rgba(239, 68, 68, 0.3)
 }
 
+@font-face {
+    font-family: 'FutureFont';
+    src: url('assets/fonts/TechnoCharmDemoVersionRegular-ALaZm.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Improves loading performance */
+}
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
