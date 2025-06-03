@@ -89,6 +89,18 @@ const CyberpunkResume = () => {
           </SectionWrapper>
         </div>
       </main>
+      <footer
+        style={{
+          textAlign: "center",
+          marginTop: "2rem",
+          color: "#888",
+          fontSize: "0.9rem",
+        }}
+      >
+        &copy; {new Date().getFullYear()} Mark McKinney. All rights reserved.{" "}
+        <br />
+        This website is hosted in AWS.
+      </footer>
     </div>
   );
 };
