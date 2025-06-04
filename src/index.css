@@ -16,19 +16,21 @@
   --color-terminal-border: rgba(239, 68, 68, 0.3);
   --color-background: #242424;
   --color-text: rgba(255, 255, 255, 0.87);
+
+  --font-mono: "IBM Plex Mono";
 }
 
 @font-face {
-    font-family: 'FutureFont';
-    src: url('assets/fonts/TechnoCharmDemoVersionRegular-ALaZm.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap; /* Improves loading performance */
+  font-family: "FutureFont";
+  src: url("assets/fonts/TechnoCharmDemoVersionRegular-ALaZm.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Improves loading performance */
 }
 
-
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: IBM Plex Mono, Consolas, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
