@@ -25,7 +25,7 @@ const SkillsSection = () => (
       },
     ].map((skillGroup, index) => (
       <div key={index} className="panel-border p-4 bg-terminal-bg/30">
-        <h3 className="text-cyber-accent font-mono text-lg mb-2">
+        <h3 className="text-cyber-accent text-lg mb-2">
           {skillGroup.category}
         </h3>
         <div className="mb-3">
@@ -35,7 +35,7 @@ const SkillsSection = () => (
               style={{ width: `${skillGroup.level}%` }}
             ></div>
           </div>
-          <span className="text-terminal-muted text-xs font-mono">
+          <span className="text-terminal-muted text-xs">
             {skillGroup.level}% PROFICIENCY
           </span>
         </div>

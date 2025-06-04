@@ -1,15 +1,22 @@
 import React from "react";
-import LinkedinSquareIcon from "../../assets/linkedin-square-icon.svg"; // Update the import path as needed
+import LinkedinSquareIcon from "../../assets/linkedin-square-icon.svg"; 
+import EnvelopeIcon from "../../assets/envelope-icon.svg"; 
+import BranchingIcon from "../../assets/branching-icon.svg"; 
 
 const ContactSection = () => (
-    <div className="grid-pattern max-w-md">
+    <div className="max-w-md">
         <div className="space-y-4">
             {[
                 {
                     label: "EMAIL",
                     value: "mmckinney0711@gmail.com",
-                    icon: "📧",
-                    href: "mailto:mmckinney0711@gmail.com",
+                    icon: (
+                        <img
+                            src={EnvelopeIcon}
+                            alt="Email"
+                            className="inline-block w-6 h-6"
+                        />
+                    ),                    href: "mailto:mmckinney0711@gmail.com",
                 },
                 {
                     label: "LINKEDIN",
@@ -18,7 +25,7 @@ const ContactSection = () => (
                         <img
                             src={LinkedinSquareIcon}
                             alt="LinkedIn"
-                            className="inline-block w-6 h-6 icon-cyber-primary"
+                            className="inline-block w-6 h-6"
                         />
                     ),
                     href: "https://www.linkedin.com/in/mark-mckinney-33a374b2/",
@@ -26,8 +33,13 @@ const ContactSection = () => (
                 {
                     label: "GITHUB",
                     value: "https://github.com/markmck",
-                    icon: "⚡",
-                    href: "https://github.com/markmck",
+                    icon: (
+                        <img
+                            src={BranchingIcon}
+                            alt="Github"
+                            className="inline-block w-6 h-6"
+                        />
+                    ),                    href: "https://github.com/markmck",
                 },
             ].map((contact, index) => (
                 <div
@@ -35,10 +47,10 @@ const ContactSection = () => (
                     className="panel-border p-3 bg-terminal-bg/30 flex items-center justify-between"
                 >
                     <div>
-                        <span className="text-cyber-accent font-mono text-sm">
+                        <span className="text-cyber-accent text-sm">
                             {contact.label}
                         </span>
-                        <p className="text-terminal-text font-mono text-sm">
+                        <p className="text-terminal-text text-sm">
                             {contact.href ? (
                                 <a
                                     href={contact.href}
