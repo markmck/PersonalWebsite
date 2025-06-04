@@ -44,10 +44,10 @@ const ContactSection = () => (
             ].map((contact, index) => (
                 <div
                     key={index}
-                    className="panel-border p-3 bg-terminal-bg/30 flex items-center justify-between"
+                    className="p-3 border border-cyber-primary/30 bg-terminal-bg/100 flex items-center justify-between"
                 >
                     <div>
-                        <span className="text-cyber-accent text-sm">
+                        <span className="text-cyber-primary text-sm">
                             {contact.label}
                         </span>
                         <p className="text-terminal-text text-sm">

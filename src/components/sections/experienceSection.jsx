@@ -44,9 +44,9 @@ const ExperienceSection = () => (
         ],
       },
     ].map((job, index) => (
-      <div key={index} className="panel-border p-4 bg-terminal-bg/20">
+      <div key={index} className="p-4 border border-cyber-primary/30 bg-terminal-bg/100">
         <div className="flex justify-between items-start mb-2">
-          <h3 className="text-cyber-accent text-lg">{job.company}</h3>
+          <h3 className="text-cyber-primary text-lg">{job.company}</h3>
           <span className="text-terminal-muted text-sm">
             {job.period}
           </span>

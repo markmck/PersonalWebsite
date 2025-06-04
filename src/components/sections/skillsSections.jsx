@@ -5,40 +5,80 @@ const SkillsSection = () => (
     {[
       {
         category: "Frontend",
-        skills: ["React", "TypeScript", "JavaScript", "HTML/CSS"],
-        level: 85,
+        skills: [
+          "React",
+          "Next.js",
+          "Vue.js",
+          "TypeScript",
+          "JavaScript",
+          "HTML/CSS",
+          "Sass/SCSS",
+          "Tailwind CSS",
+          "Jest",
+          "Webpack",
+          "Vite",
+          "Storybook",
+        ],
       },
       {
         category: "Backend",
-        skills: ["Node.js", ".Net", "APIs", "Databases"],
-        level: 80,
+        skills: [
+          ".Net",
+          "REST",
+          "GraphQL",
+          "MSSQL",
+          "PostgreSQL",
+          "ORMs",
+          "Node.js",
+          "Authentication",
+          "Authorization",
+          "API Design",
+          "Microservices",
+          "Unit Testing",
+          "Caching",
+          "Message Queues",
+        ],
       },
       {
         category: "Cloud",
-        skills: ["AWS", "AZURE", "Docker", "CI/CD"],
-        level: 75,
+        skills: [
+          "AWS",
+          "AZURE",
+          "Docker",
+          "Serverless",
+          "Cloud Functions",
+          "Load Balancing",
+          "Monitoring",
+        ],
       },
       {
-        category: "Tools",
-        skills: ["Git", "VS Code", "Agile", "WSL"],
-        level: 90,
+        category: "Tools & Concepts",
+        skills: [
+          "Git",
+          "VS Code",
+          "Agile",
+          "Scrum",
+          "Service Oriented Architecture",
+          "Figma",
+          "JIRA",
+          "ADO",
+          "Design Systems",
+          "WSL",
+          "Linux",
+          "Bash",
+          "DevOps",
+          "CI/CD",
+          "GitHub Actions",
+        ],
       },
     ].map((skillGroup, index) => (
-      <div key={index} className="panel-border p-4 bg-terminal-bg/30">
-        <h3 className="text-cyber-accent text-lg mb-2">
+      <div
+        key={index}
+        className="p-4 border border-cyber-primary/30 bg-terminal-bg/100"
+      >
+        <h3 className="text-cyber-primary text-lg mb-2">
           {skillGroup.category}
         </h3>
-        <div className="mb-3">
-          <div className="w-full bg-terminal-surface h-2 mb-2">
-            <div
-              className="bg-gradient-to-r from-cyber-secondary to-cyber-accent h-2 glow-red"
-              style={{ width: `${skillGroup.level}%` }}
-            ></div>
-          </div>
-          <span className="text-terminal-muted text-xs">
-            {skillGroup.level}% PROFICIENCY
-          </span>
-        </div>
         <div className="flex flex-wrap gap-1">
           {skillGroup.skills.map((skill, skillIndex) => (
             <span
