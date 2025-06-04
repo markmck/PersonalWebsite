@@ -31,18 +31,6 @@ const CyberpunkResume = () => {
 
   return (
     <div className="min-h-screen min-w-screen bg-terminal-bg text-white relative overflow-hidden">
-      {/* Animated background grid */}
-      <div className="fixed inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `linear-gradient(rgba(239,68,68,0.1) 1px, transparent 1px),
-                           linear-gradient(90deg, rgba(239,68,68,0.1) 1px, transparent 1px)`,
-            backgroundSize: "20px 20px",
-          }}
-        ></div>
-      </div>
-
       {/* Header */}
       <header className="relative z-20 p-6 border-b border-terminal-border">
         <div className="max-w-6xl mx-auto">
@@ -52,7 +40,7 @@ const CyberpunkResume = () => {
           >
             SYSTEM_RESUME
           </h1>
-          <p className="text-terminal-dim font-mono text-sm flex items-center">
+          <p className="text-terminal-dim text-sm flex items-center">
             {">"} Initializing personal data interface...
             <span
               className="ml-1 inline-block w-2.5 h-4 bg-cyber-dark opacity-50"
