@@ -8,7 +8,6 @@
 
   /* Cyberpunk geometry */
   --clip: polygon(0 0, 100% 0, 100% 100%, 8% 100%, 0 70%);
-  --border: 2px;
   --shimmy-distance: 3;
   --clip-one: polygon(0 2%, 100% 2%, 100% 95%, 8% 95%, 0 70%);
   --clip-two: polygon(0 78%, 100% 78%, 100% 100%, 8% 100%, 0 78%);
@@ -27,7 +26,6 @@
 
   height: 48px;
   border: 0;
-  outline: none;
   background: var(--primary);
   cursor: pointer;
   position: relative;
@@ -41,11 +39,6 @@
 
 .cybr-btn:hover {
   --primary: var(--color-cyber-primary);
-  background: var(--primary);
-}
-
-.cybr-btn:active {
-  --primary: var(--color-cyber-dark);
   background: var(--primary);
 }
 
@@ -67,15 +60,6 @@
 
 .cybr-btn:hover .cybr-btn__label {
   color: var(--color-cyber-light);
-}
-
-.cybr-btn:hover {
-  --primary: var(--color-cyber-primary);
-  color: var(--color-cyber-light);
-}
-
-.cybr-btn:active {
-  --primary: var(--color-cyber-dark);
 }
 
 .cybr-btn__tag {
@@ -127,12 +111,12 @@
 
 /* Active state - enhanced glow */
 .cybr-btn--active {
-  background: var(--color-cyber-primary);
+  background: var(--color-cyber-accent);
   box-shadow: 0 0 20px var(--glow);
 }
 
 .cybr-btn--active .cybr-btn__label {
-  color: var(--color-cyber-accent);
+  color: var(--color-cyber-light);
   text-shadow: 0 0 10px var(--glow);
   background: var(--color-terminal-bg);
 }
