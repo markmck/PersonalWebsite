@@ -9,6 +9,7 @@ const SkillsSection = () => (
           "React",
           "Next.js",
           "Vue.js",
+          "AngularJS",
           "TypeScript",
           "JavaScript",
           "HTML/CSS",
