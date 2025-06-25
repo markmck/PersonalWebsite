@@ -8,7 +8,7 @@ const ExperienceSection = () => (
         role: "Senior Software Engineer",
         period: "2021 - Present",
         achievements: [
-          "Developed full-stack applications hosted in Azure using React, and .NET",
+          "Developed full-stack applications hosted in Azure using Angular, React, and .NET",
           "Collaborated with clients to revise requirements and ensure project alignment with business goals.",
           "Developed and implemented microservices in C# to enhance system modularity and improve scalability.",
           "Implemented CI/CD pipelines",
@@ -29,7 +29,7 @@ const ExperienceSection = () => (
         role: "Software Engineer",
         period: "2016-2017",
         achievements: [
-          "Implemented Inventory Management system to track and audit products and supplies, allowing for 100% accurate inventory audits and reducing time performing audits. Using Xamarin Forms, C# and SQL.",
+          "Implemented Inventory Management system to track and audit products and supplies, allowing for 100% accurate inventory audits and reducing time performing audits using Xamarin Forms, C# and SQL.",
           "Gathered business requirements, designing software architecture, implementing solutions and testing.",
         ],
       },

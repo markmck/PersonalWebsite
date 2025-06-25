@@ -20,7 +20,7 @@ const ContactSection = () => (
                 },
                 {
                     label: "LINKEDIN",
-                    value: "https://www.linkedin.com/in/mark-mckinney-33a374b2/",
+                    value: "https://www.linkedin.com/in/mark-a-mckinney/",
                     icon: (
                         <img
                             src={LinkedinSquareIcon}
@@ -28,7 +28,7 @@ const ContactSection = () => (
                             className="inline-block w-6 h-6"
                         />
                     ),
-                    href: "https://www.linkedin.com/in/mark-mckinney-33a374b2/",
+                    href: "https://www.linkedin.com/in/mark-a-mckinney/",
                 },
                 {
                     label: "GITHUB",
